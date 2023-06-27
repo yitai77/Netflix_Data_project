@@ -14,5 +14,6 @@ st.dataframe(common.get_us_data(),
 
 st.title("KO-Data")
 
-sk_data = data[data['country'] == 'South Korea']
-st.write(sk_data)
+st.dataframe(common.get_ko_data(),
+             use_container_width=True,
+             hide_index=True)
