@@ -9,13 +9,13 @@ import seaborn as sns
 st.title("US-Data")
 get_ko_data = common.get_ko_data
 
-#열 기준으로 데이터 분류
-sk_data_counts = get_ko_data['type'].value_counts()
 
-#색상 설정
+sk_data_counts = get_ko_data()['type'].value_counts()
+
+
 colors = ['violet', 'mistyrose']
 
-#도덧 차트 그리기
+
 fig, ax = plt.subplots()
 ax.pie(sk_data_counts, labels=sk_data_counts.index, autopct='%1.1f%%', startangle=90, wedgeprops={'edgecolor': 'white', 'width':0.7}, colors = colors)
 ax.axis('equal')
