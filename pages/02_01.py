@@ -9,7 +9,7 @@ import seaborn as sns
 st.title("US-Data")
 
 #''type' 열 기준으로 데이터 분류
-sk_data_counts = get_ko_data['type'].value_counts()
+sk_data_counts = common.get_ko_data['type'].value_counts()
 
 #색상 설정
 colors = ['violet', 'mistyrose']
