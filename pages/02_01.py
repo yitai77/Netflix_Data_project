@@ -14,8 +14,9 @@ sk_data_counts = sk_data['type'].value_counts()
 colors = ['violet', 'mistyrose']
 
 #도덧 차트 그리기
-plt.pie(sk_data_counts, labels=sk_data_counts.index, autopct='%1.1f%%', startangle=90, wedgeprops={'edgecolor': 'white', 'width':0.7}, colors = colors)
-plt.axis('equal')
-plt.title('Netflix Shows in the South Korea')
+fig, ax = plt.subplots()
+ax.pie(sk_data_counts, labels=sk_data_counts.index, autopct='%1.1f%%', startangle=90, wedgeprops={'edgecolor': 'white', 'width':0.7}, colors = colors)
+ax.axis('equal')
+ax.set_title('Netflix Shows in the South Korea')
 
-st.pyplot()
+st.pyplot(fig)
