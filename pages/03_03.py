@@ -13,9 +13,9 @@ color = ['violet']
 
 fig, ax = plt.subplots()
 ax.bar(sk_year_counts.index, sk_year_counts.values, color=color)
-ax.xlabel('Year')
-ax.ylabel('Count')
-ax.xticks(sk_type_counts.index, sk_type_counts.index.astype(int), rotation=45)
+ax.set_xlabel('Year')
+ax.set_ylabel('Count')
+ax.set_xticks(sk_type_counts.index, sk_type_counts.index.astype(int), rotation=45)
 ax.set_title('Netflix Shows in the South Korea by year')
 st.pyplot(fig)
 
