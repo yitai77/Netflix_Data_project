@@ -13,4 +13,4 @@ Netflix에서 스트리밍되는 영화와 TV 쇼에 대한 정보를 포함하�
 
 이 데이터셋을 사용하여 한국과 미국의 Netflix 영화와 TV 쇼에 대한 다양한 분석 및 시각화를 수행했습니다. 
 """)
-st.image("img/charlesdeluvio-jtmwD4i4v1U-unsplash.jpg",width=200)
+st.image("img/charlesdeluvio-jtmwD4i4v1U-unsplash.jpg",width=500)
