@@ -4,7 +4,7 @@ import common
 common.page_config()
 
 st.title("Netflix Data Analysis")
-st.header("South Korea and United States")
+st.subheader("South Korea and United States")
 st.caption("""
 "Netflix Movies and TV Shows" 데이터셋:
 Netflix에서 스트리밍되는 영화와 TV 쇼에 대한 정보를 포함하고 있는 데이터셋입니다. 
