@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
+
 st.title("US-Data")
 
 #''type' 열 기준으로 데이터 분류
