@@ -7,12 +7,9 @@ import seaborn as sns
 
 st.title("US-Data")
 
-data = pd.read_csv("./netflix1.csv")
-
-usa_data = data[data['country'] == 'United States']
-
-st.write(usa_data)
-
+st.dataframe(common.get_us_data(),
+             use_container_width=True,
+             hide_index=True)
 
 
 st.title("KO-Data")
