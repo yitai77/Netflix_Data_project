@@ -1,5 +1,5 @@
 import streamlit as st
-
+import common
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -7,10 +7,10 @@ import seaborn as sns
 
 
 st.title("US-Data")
-get_ko_data = common.get_ko_data()
+Korean = common.get_ko_data()
 
 
-sk_data_counts = get_ko_data['type'].value_counts()
+sk_data_counts = Korean['type'].value_counts()
 
 
 colors = ['violet', 'mistyrose']
