@@ -7,10 +7,10 @@ import seaborn as sns
 
 
 st.title("US-Data")
-data = common.get_ko_data
+get_ko_data = common.get_ko_data()
 
 
-sk_data_counts = data['type'].value_counts()
+sk_data_counts = get_ko_data['type'].value_counts()
 
 
 colors = ['violet', 'mistyrose']
