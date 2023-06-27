@@ -7,7 +7,8 @@ import seaborn as sns
 
 st.title("Data")
 
-st.data = pd.read_csv
+data = pd.read_csv("./netflix1.csv")
 
-st.usa_data = data[data['country'] == 'United States']
-st.usa_data
+usa_data = data[data['country'] == 'United States']
+
+st.write(usa_data)
