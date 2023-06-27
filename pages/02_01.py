@@ -6,7 +6,7 @@ import numpy as np
 import seaborn as sns
 
 
-st.title("US-Data")
+st.title("KOR-Data")
 Korean = common.get_ko_data()
 
 
